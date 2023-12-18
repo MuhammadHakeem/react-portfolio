@@ -3,7 +3,7 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
-  CalendarIcon,
+  // CalendarIcon,
   FlagIcon,
   MapIcon,
   SparklesIcon,
@@ -85,7 +85,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: 'C:\react-portfolio\src\data\assets\resume.pdf',
+      href: '/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -109,8 +109,8 @@ export const aboutData: About = {
   solutions.`,
   aboutItems: [
     {label: 'Location', text: 'B.B. Bangi, Selangor', Icon: MapIcon},
-    {label: 'Age', text: '23', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Selangor', Icon: FlagIcon},
+    // {label: 'Age', text: '23', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Malaysian', Icon: FlagIcon},
     {label: 'Interests', text: 'Basketball, Skipping, Jogging, MOBA Games', Icon: SparklesIcon},
     {label: 'Study', text: 'Multimedia University', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'TM Research & Development', Icon: BuildingOffice2Icon},
