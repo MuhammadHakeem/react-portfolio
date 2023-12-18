@@ -103,16 +103,17 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Passionate tech enthusiast and skilled mobile developer with a knack for creating innovative and user-friendly mobile
+  applications. Strong problem-solving abilities and an aptitude for working collaboratively with cross-functional teams.
+  Committed to staying up-to-date with the latest mobile development trends and technologies to deliver cutting-edge
+  solutions.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'B.B. Bangi, Selangor', Icon: MapIcon},
+    {label: 'Age', text: '23', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Selangor', Icon: FlagIcon},
+    {label: 'Interests', text: 'Basketball, Skipping, Jogging, MOBA Games', Icon: SparklesIcon},
+    {label: 'Study', text: 'Multimedia University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'TM Research & Development', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -121,27 +122,39 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Mobile Development',
     skills: [
       {
-        name: 'English',
-        level: 10,
+        name: 'Ionic',
+        level: 8,
       },
       {
-        name: 'French',
+        name: 'Flutter',
         level: 4,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'Fastlane',
+        level: 6,
+      },
+      {
+        name: 'Gradle',
+        level: 5,
+      },
+      {
+        name: 'Jasmine & Karma',
+        level: 7,
+      },
+      {
+        name: 'Android Studio',
+        level: 6,
       },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Frontend Development',
     skills: [
       {
-        name: 'React',
+        name: 'Angular',
         level: 9,
       },
       {
@@ -149,42 +162,42 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
       {
-        name: 'GraphQL',
+        name: 'React',
+        level: 7,
+      },
+      {
+        name: 'Bootstrap',
+        level: 7,
+      },
+      {
+        name: 'Apache Echart',
+        level: 6,
+      },
+      {
+        name: 'Docker',
         level: 6,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Backend Development',
     skills: [
       {
         name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
+        level: 6,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Spoken Languages',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
+        name: 'Malay',
+        level: 8,
       },
       {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
+        name: 'English',
+        level: 6,
       },
     ],
   },
@@ -267,39 +280,51 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'Aug 2022',
+    location: 'Multimedia University',
+    title: 'BSc (Hons) of Computer Science with Specialization in Software Engineering',
+    content: <p>CGPA: 3.75/4.00  (1st Class Honour)</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'June 2019',
+    location: 'UITM Dengkil',
+    title: 'Foundation in Science',
+    content: <p>MUET: Band 4</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'October 2022 - Present',
+    location: 'TM Research & Development',
+    title: 'Researcher (Mobile Division)',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        -Developed and mantained 2 mobile apps  & 2 website related to Event Management System.<br/>
+        -Used framework/ tools such as Angular v14, Ionic v6, Capacitor v4, Typescript, Bootstrap, Apache Echarts,
+        Docker, Fastlane Jasmine, MySQL, Postman, HTML and CSS.<br/>
+        -Implement Auto Deployement Pipeline using Fastlane, Docker and Gitlab for mobile apps release. <br/>
+        -Set up Angular Unit Test Gitlab Continuous Integration (CI) Pipeline using Docker and Gitlab.<br/>
+        -Implemented Unit Tests using Jasmine and Karma on fresh mobile apps project.<br/>
+        -Built & released APK using Android Studio to Firebase App Distribution for Android platform.<br/>
+        -Used Swagger and Postman to test API endpoint and responses.<br/>
+        -Utilized GitLab to manage code, control versions, and implement effective branching strategies.<br/>
+        -Leveraged Jira and Confluence to facilitate communication and collaboration.<br/>
+        -Participated in the complete software development lifecycle, including coding, testing, debugging, and documentation. <br/>
+        -Collaborated with the UI/UX team to ensure the user interface and user experience are optimized for mobile platforms.<br/>
+        -Took online Flutter course on Udemy to learn and to implement it into a new project in the near future.<br/>
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'March 2021 - June 2021',
+    location: ' Open Architecture Solution Sdn. Bhd.',
+    title: 'Technical Analyst (Internship)',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Collaborated with a senior developer on a project that involved integrating a REST API and developing the
+        front-end of a mobile application using Ionic framework v4. To aid in the development process, we utilized
+        the Postman API tool to test and debug our API endpoints. 
       </p>
     ),
   },
@@ -335,27 +360,27 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'You can reach me through list of social media below.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'muhdhakeem526@gmail.com',
+      href: 'mailto:muhdhakeem526@gmail.com',
     },
-    {
-      type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
+    // {
+    //   type: ContactType.Location,
+    //   text: 'Bandar Baru Bangi, Selangor',
+    //   href: 'https://maps.app.goo.gl/EyHdtddHCNsR9sbp7',
+    // },
+    // {
+    //   type: ContactType.Instagram,
+    //   text: '@tbakerx',
+    //   href: 'https://www.instagram.com/tbakerx/',
+    // },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'MuhammadHakeem',
+      href: 'https://github.com/MuhammadHakeem',
     },
   ],
 };
