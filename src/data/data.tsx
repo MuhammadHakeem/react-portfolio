@@ -79,7 +79,7 @@ export const heroData: Hero = {
         by using latest tech stack.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Like to play games that related to multiplayer and composition as a team.
+      Passionate about MOBA gaming and fostering camaraderie, I relish spending quality time with friends in the immersive world of multiplayer online battle arena games.
       </p>
     </>
   ),
@@ -367,16 +367,11 @@ export const contact: ContactSection = {
       text: 'muhdhakeem526@gmail.com',
       href: 'mailto:muhdhakeem526@gmail.com',
     },
-    // {
-    //   type: ContactType.Location,
-    //   text: 'Bandar Baru Bangi, Selangor',
-    //   href: 'https://maps.app.goo.gl/EyHdtddHCNsR9sbp7',
-    // },
-    // {
-    //   type: ContactType.Instagram,
-    //   text: '@tbakerx',
-    //   href: 'https://www.instagram.com/tbakerx/',
-    // },
+    {
+      type: ContactType.LinkedIn,
+      text: 'Hakeem Adil',
+      href: 'https://www.linkedin.com/in/hakeemadil/',
+    },
     {
       type: ContactType.Github,
       text: 'MuhammadHakeem',
