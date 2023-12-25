@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import AngularIcon from 'C:/react-portfolio/src/components/Icon/AngularIcon';
-import IonicIcon from 'C:/react-portfolio/src/components/Icon/IonicIcon';
-import GradleIcon from 'C:/react-portfolio/src/components/Icon/GradleIcon';
-import TypescriptIcon from 'C:/react-portfolio/src/components/Icon/TypescriptIcon';
-import DockerIcon from 'C:/react-portfolio/src/components/Icon/DockerIcon';
-import JasmineIcon from 'C:/react-portfolio/src/components/Icon/JasmineIcon';
-import AndStudIcon from 'C:/react-portfolio/src/components/Icon/AndStudIcon';
-import BootstrapIcon from 'C:/react-portfolio/src/components/Icon/BootstrapIcon';
+import AngularIcon from 'components/Icon/AngularIcon';
+import IonicIcon from 'components/Icon/IonicIcon';
+import GradleIcon from 'components/Icon/GradleIcon';
+import TypescriptIcon from 'components/Icon/TypescriptIcon';
+import DockerIcon from 'components/Icon/DockerIcon';
+import JasmineIcon from 'components/Icon/JasmineIcon';
+import AndStudIcon from 'components/Icon/AndStudIcon';
+import BootstrapIcon from 'components/Icon/BootstrapIcon';
 
 
 export default class AutoPlay extends Component {
