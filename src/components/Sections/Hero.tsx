@@ -5,6 +5,7 @@ import {FC, memo} from 'react';
 
 import {heroData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
+import Carousel from './Carousel';
 // import Socials from '../Socials';
 
 const Hero: FC = memo(() => {
@@ -42,6 +43,7 @@ const Hero: FC = memo(() => {
               ))}
             </div>
           </div>
+          <Carousel />
         </div>
         <div className="absolute inset-x-0 bottom-6 flex justify-center">
           <a
