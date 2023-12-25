@@ -1,6 +1,6 @@
 import 'tailwindcss/tailwind.css';
 import '../globalStyles.scss';
-import "../components/Sections/styles/carousel.scss"
+import '../components/Sections/styles/carousel.scss';
 
 import type {AppProps} from 'next/app';
 import {memo} from 'react';

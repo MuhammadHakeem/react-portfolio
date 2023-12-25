@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,7 +11,6 @@ import JasmineIcon from 'components/Icon/JasmineIcon';
 import AndStudIcon from 'components/Icon/AndStudIcon';
 import BootstrapIcon from 'components/Icon/BootstrapIcon';
 
-
 export default class AutoPlay extends Component {
   render() {
     const settings = {
@@ -23,8 +22,7 @@ export default class AutoPlay extends Component {
       autoplay: true,
       speed: 3000,
       autoplaySpeed: 0,
-      cssEase: "linear",
-
+      cssEase: 'linear',
     };
     return (
       <div className="pt-10">
@@ -36,22 +34,22 @@ export default class AutoPlay extends Component {
             <IonicIcon className="h-30 w-30" />
           </div>
           <div className="carousel">
-            <TypescriptIcon className="h-12 w-12"/>
+            <TypescriptIcon className="h-12 w-12" />
           </div>
           <div className="carousel">
-            <DockerIcon className="h-20 w-20"/>
+            <DockerIcon className="h-20 w-20" />
           </div>
           <div className="carousel">
-            <JasmineIcon className="h-20 w-20"/>
+            <JasmineIcon className="h-20 w-20" />
           </div>
           <div className="carousel">
-            <AndStudIcon className="h-30 w-30"/>
+            <AndStudIcon className="h-30 w-30" />
           </div>
           <div className="carousel">
-            <BootstrapIcon className="h-20 w-20"/>
+            <BootstrapIcon className="h-20 w-20" />
           </div>
           <div className="carousel">
-            <GradleIcon className="h-30 w-30"/>
+            <GradleIcon className="h-30 w-30" />
           </div>
         </Slider>
       </div>

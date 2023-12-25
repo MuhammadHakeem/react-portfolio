@@ -61,7 +61,7 @@ export const SectionId = {
   Skills: 'skills',
   Stats: 'stats',
   Testimonials: 'testimonials',
-  Carousel: 'carousel'
+  Carousel: 'carousel',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -75,12 +75,13 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Selangor based <strong className="text-stone-100">Web and Mobile Software Developer</strong>, currently working
-        at <strong className="text-stone-100">TM Research & Development</strong> building a modern website and mobile apps
-        by using latest tech stack.
+        I'm a Selangor based <strong className="text-stone-100">Web and Mobile Software Developer</strong>, currently
+        working at <strong className="text-stone-100">TM Research & Development</strong> building a modern website and
+        mobile apps by using latest tech stack.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-      Passionate about MOBA gaming and fostering camaraderie, I relish spending quality time with friends in the immersive world of multiplayer online battle arena games.
+        Passionate about MOBA gaming and fostering camaraderie, I relish spending quality time with friends in the
+        immersive world of multiplayer online battle arena games.
       </p>
     </>
   ),
@@ -284,7 +285,7 @@ export const education: TimelineItem[] = [
     date: 'Aug 2022',
     location: 'Multimedia University',
     title: 'BSc (Hons) of Computer Science with Specialization in Software Engineering',
-    content: <p>CGPA: 3.75/4.00  (1st Class Honour)</p>,
+    content: <p>CGPA: 3.75/4.00 (1st Class Honour)</p>,
   },
   {
     date: 'June 2019',
@@ -301,19 +302,31 @@ export const experience: TimelineItem[] = [
     title: 'Researcher (Mobile Division)',
     content: (
       <p>
-        -Developed and mantained 2 mobile apps  & 2 website related to Event Management System.<br/>
+        -Developed and mantained 2 mobile apps & 2 website related to Event Management System.
+        <br />
         -Used framework/ tools such as Angular v14, Ionic v6, Capacitor v4, Typescript, Bootstrap, Apache Echarts,
-        Docker, Fastlane Jasmine, MySQL, Postman, HTML and CSS.<br/>
-        -Implement Auto Deployement Pipeline using Fastlane, Docker and Gitlab for mobile apps release. <br/>
-        -Set up Angular Unit Test Gitlab Continuous Integration (CI) Pipeline using Docker and Gitlab.<br/>
-        -Implemented Unit Tests using Jasmine and Karma on fresh mobile apps project.<br/>
-        -Built & released APK using Android Studio to Firebase App Distribution for Android platform.<br/>
-        -Used Swagger and Postman to test API endpoint and responses.<br/>
-        -Utilized GitLab to manage code, control versions, and implement effective branching strategies.<br/>
-        -Leveraged Jira and Confluence to facilitate communication and collaboration.<br/>
-        -Participated in the complete software development lifecycle, including coding, testing, debugging, and documentation. <br/>
-        -Collaborated with the UI/UX team to ensure the user interface and user experience are optimized for mobile platforms.<br/>
-        -Took online Flutter course on Udemy to learn and to implement it into a new project in the near future.<br/>
+        Docker, Fastlane Jasmine, MySQL, Postman, HTML and CSS.
+        <br />
+        -Implement Auto Deployement Pipeline using Fastlane, Docker and Gitlab for mobile apps release. <br />
+        -Set up Angular Unit Test Gitlab Continuous Integration (CI) Pipeline using Docker and Gitlab.
+        <br />
+        -Implemented Unit Tests using Jasmine and Karma on fresh mobile apps project.
+        <br />
+        -Built & released APK using Android Studio to Firebase App Distribution for Android platform.
+        <br />
+        -Used Swagger and Postman to test API endpoint and responses.
+        <br />
+        -Utilized GitLab to manage code, control versions, and implement effective branching strategies.
+        <br />
+        -Leveraged Jira and Confluence to facilitate communication and collaboration.
+        <br />
+        -Participated in the complete software development lifecycle, including coding, testing, debugging, and
+        documentation. <br />
+        -Collaborated with the UI/UX team to ensure the user interface and user experience are optimized for mobile
+        platforms.
+        <br />
+        -Took online Flutter course on Udemy to learn and to implement it into a new project in the near future.
+        <br />
       </p>
     ),
   },
@@ -324,8 +337,8 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         Collaborated with a senior developer on a project that involved integrating a REST API and developing the
-        front-end of a mobile application using Ionic framework v4. To aid in the development process, we utilized
-        the Postman API tool to test and debug our API endpoints. 
+        front-end of a mobile application using Ionic framework v4. To aid in the development process, we utilized the
+        Postman API tool to test and debug our API endpoints.
       </p>
     ),
   },
@@ -388,6 +401,6 @@ export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/MuhammadHakeem'},
   // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/hakeemadil'},
-//   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-//   {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  //   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
+  //   {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
