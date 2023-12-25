@@ -10,6 +10,8 @@ import DockerIcon from 'components/Icon/DockerIcon';
 import JasmineIcon from 'components/Icon/JasmineIcon';
 import AndStudIcon from 'components/Icon/AndStudIcon';
 import BootstrapIcon from 'components/Icon/BootstrapIcon';
+import Section from "components/Layout/Section";
+import {SectionId} from '../../data/data';
 
 export default class AutoPlay extends Component {
   render() {
@@ -20,39 +22,41 @@ export default class AutoPlay extends Component {
       slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
-      speed: 3000,
+      speed: 4000,
       autoplaySpeed: 0,
-      cssEase: 'linear',
+      // cssEase: 'linear',
     };
     return (
-      <div className="pt-10">
-        <Slider {...settings}>
-          <div className="carousel">
-            <AngularIcon className="h-14 w-14" />
-          </div>
-          <div className="carousel">
-            <IonicIcon className="h-30 w-30" />
-          </div>
-          <div className="carousel">
-            <TypescriptIcon className="h-12 w-12" />
-          </div>
-          <div className="carousel">
-            <DockerIcon className="h-20 w-20" />
-          </div>
-          <div className="carousel">
-            <JasmineIcon className="h-20 w-20" />
-          </div>
-          <div className="carousel">
-            <AndStudIcon className="h-30 w-30" />
-          </div>
-          <div className="carousel">
-            <BootstrapIcon className="h-20 w-20" />
-          </div>
-          <div className="carousel">
-            <GradleIcon className="h-30 w-30" />
-          </div>
-        </Slider>
-      </div>
+      <Section sectionId={SectionId.Carousel}>
+        <div className="pt-10">
+          <Slider {...settings}>
+            <div className="carousel">
+              <AngularIcon className="h-14 w-14" />
+            </div>
+            <div className="carousel">
+              <IonicIcon className="h-30 w-30" />
+            </div>
+            <div className="carousel">
+              <TypescriptIcon className="h-12 w-12" />
+            </div>
+            <div className="carousel">
+              <DockerIcon className="h-20 w-20" />
+            </div>
+            <div className="carousel">
+              <JasmineIcon className="h-20 w-20" />
+            </div>
+            <div className="carousel">
+              <AndStudIcon className="h-30 w-30" />
+            </div>
+            <div className="carousel">
+              <BootstrapIcon className="h-20 w-20" />
+            </div>
+            <div className="carousel">
+              <GradleIcon className="h-30 w-30" />
+            </div>
+          </Slider>
+        </div>
+      </Section>
     );
   }
 }
