@@ -301,33 +301,23 @@ export const experience: TimelineItem[] = [
     location: 'TM Research & Development',
     title: 'Researcher (Mobile Division)',
     content: (
-      <p>
-        -Developed and mantained 2 mobile apps & 2 website related to Event Management System.
-        <br />
-        -Used framework/ tools such as Angular v14, Ionic v6, Capacitor v4, Typescript, Bootstrap, Apache Echarts,
-        Docker, Fastlane Jasmine, MySQL, Postman, HTML and CSS.
-        <br />
-        -Implement Auto Deployement Pipeline using Fastlane, Docker and Gitlab for mobile apps release. <br />
-        -Set up Angular Unit Test Gitlab Continuous Integration (CI) Pipeline using Docker and Gitlab.
-        <br />
-        -Implemented Unit Tests using Jasmine and Karma on fresh mobile apps project.
-        <br />
-        -Built & released APK using Android Studio to Firebase App Distribution for Android platform.
-        <br />
-        -Used Swagger and Postman to test API endpoint and responses.
-        <br />
-        -Utilized GitLab to manage code, control versions, and implement effective branching strategies.
-        <br />
-        -Leveraged Jira and Confluence to facilitate communication and collaboration.
-        <br />
-        -Participated in the complete software development lifecycle, including coding, testing, debugging, and
-        documentation. <br />
-        -Collaborated with the UI/UX team to ensure the user interface and user experience are optimized for mobile
-        platforms.
-        <br />
-        -Took online Flutter course on Udemy to learn and to implement it into a new project in the near future.
-        <br />
-      </p>
+      <ul className='text-start pl-2'>
+        <li>Developed and mantained 2 mobile apps & 2 website related to Event Management System.</li><hr></hr>
+        <li>Used framework/ tools such as Angular v14, Ionic v6, Capacitor v4, Typescript, Bootstrap, Apache Echarts,
+        Docker, Fastlane Jasmine, MySQL, Postman, HTML and CSS.</li><hr></hr>
+        <li>Implement Auto Deployement Pipeline using Fastlane, Docker and Gitlab for mobile apps release.</li><hr></hr>
+        <li>Set up Angular Unit Test Gitlab Continuous Integration (CI) Pipeline using Docker and Gitlab.</li><hr></hr>
+        <li>Implemented Unit Tests using Jasmine and Karma on fresh mobile apps project.</li><hr></hr>
+        <li>Built & released APK using Android Studio to Firebase App Distribution for Android platform.</li><hr></hr>
+        <li>Used Swagger and Postman to test API endpoint and responses.</li><hr></hr>
+        <li>Utilized GitLab to manage code, control versions, and implement effective branching strategies.</li><hr></hr>
+        <li>Leveraged Jira and Confluence to facilitate communication and collaboration.</li><hr></hr>
+        <li>Participated in the complete software development lifecycle, including coding, testing, debugging, and
+        documentation.</li><hr></hr>
+        <li>Collaborated with the UI/UX team to ensure the user interface and user experience are optimized for mobile
+        platforms.</li><hr></hr>
+        <li>Took online Flutter course on Udemy to learn and to implement it into a new project in the near future.</li><hr></hr>
+      </ul>
     ),
   },
   {
@@ -335,11 +325,11 @@ export const experience: TimelineItem[] = [
     location: ' Open Architecture Solution Sdn. Bhd.',
     title: 'Technical Analyst (Internship)',
     content: (
-      <p>
-        Collaborated with a senior developer on a project that involved integrating a REST API and developing the
+      <ul className='text-justify pl-2'>
+        <li>Collaborated with a senior developer on a project that involved integrating a REST API and developing the
         front-end of a mobile application using Ionic framework v4. To aid in the development process, we utilized the
-        Postman API tool to test and debug our API endpoints.
-      </p>
+        Postman API tool to test and debug our API endpoints.</li>
+      </ul>
     ),
   },
 ];
