@@ -62,6 +62,7 @@ export const SectionId = {
   Stats: 'stats',
   Testimonials: 'testimonials',
   Carousel: 'carousel',
+  Typed: 'typed'
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -71,17 +72,16 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Hakeem.`,
+  name: `Hi. I'm Hakeem.`,
+  role: `A Web and Mobile Developer`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Selangor based <strong className="text-stone-100">Web and Mobile Software Developer</strong>, currently
-        working at <strong className="text-stone-100">TM Research & Development</strong> building a modern website and
+        Currently working at <strong className="text-stone-100">TM Research & Development</strong> building a modern website and
         mobile apps by using latest tech stack.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Passionate about MOBA gaming and fostering camaraderie, I relish spending quality time with friends in the
-        immersive world of multiplayer online battle arena games.
+        Passionate about an active lifestyle, finding joy in activities such as jogging, skipping, and playing sports like basketball.
       </p>
     </>
   ),

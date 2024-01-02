@@ -9,10 +9,10 @@ import Carousel from './Carousel';
 // import Socials from '../Socials';
 
 const Hero: FC = memo(() => {
-  const {imageSrc, name, description, actions} = heroData;
+  const {imageSrc, name, description, actions, role} = heroData;
 
   return (
-    <Section noPadding sectionId={SectionId.Hero}>
+    <Section noPadding sectionId={SectionId.About}>
       <div className="relative flex h-screen w-full items-center justify-center">
         <Image
           alt={`${name}-image`}
@@ -24,6 +24,7 @@ const Hero: FC = memo(() => {
         <div className="z-10 w-11/12 px-4 lg:px-0">
           <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/40 p-6 text-center shadow-lg backdrop-blur-sm">
             <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-7xl">{name}</h1>
+            <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-7xl">{role}</h1>
             {description}
             {/* <div className="flex gap-x-4 text-neutral-100">
               <Socials />
