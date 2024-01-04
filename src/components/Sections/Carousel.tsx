@@ -27,13 +27,13 @@ export default class AutoPlay extends Component {
       // cssEase: 'linear',
     };
     return (
-      <div className="pt-4">
+      <div className="mt-4 bg-slate-300 rounded-2xl">
         <Slider {...settings}>
           <div className="carousel">
             <AngularIcon className="h-14 w-14" />
           </div>
           <div className="carousel">
-            <IonicIcon className="h-30 w-30" />
+            <IonicIcon className="h-16 w-16" />
           </div>
           <div className="carousel">
             <TypescriptIcon className="h-12 w-12" />
