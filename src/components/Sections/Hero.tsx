@@ -9,7 +9,7 @@ import Carousel from './Carousel';
 // import Socials from '../Socials';
 
 const Hero: FC = memo(() => {
-  const {imageSrc, name, description, actions, role} = heroData;
+  const {imageSrc, name, description, actions, role1, role2} = heroData;
 
   return (
     <Section noPadding sectionId={SectionId.About}>
@@ -23,9 +23,17 @@ const Hero: FC = memo(() => {
         />
         <div className="z-10 w-11/12 px-4 lg:px-0">
           <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/40 p-6 text-center shadow-lg backdrop-blur-sm">
-            <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-7xl">{name}</h1>
-            <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-7xl">{role}</h1>
-            {description}
+            <div className='flex flex-row'>
+              <div className='flex flex-col w-6/12 text-start'>
+                <h3 className="text-4xl font-bold text-white sm:text-2xl lg:text-6xl sporty-green">{name}</h3>
+                <h3 className="text-s4xl font-bold text-white sm:text-2xl lg:text-6xl">{role1}</h3>
+                <h3 className="text-4xl font-bold text-white sm:text-2xl lg:text-6xl pb-8">{role2}</h3>
+                {description}
+              </div>
+              <div className='flex w-6/12  h-3/6 justify-center'>
+                  <img className='h-3/6 w-3/6' src={'pingu.gif'}/>
+              </div>
+            </div>
             {/* <div className="flex gap-x-4 text-neutral-100">
               <Socials />
             </div> */}
@@ -34,7 +42,7 @@ const Hero: FC = memo(() => {
                 <a
                   className={classNames(
                     'flex gap-x-2 rounded-full border-2 bg-none px-4 py-2 text-sm font-medium text-white ring-offset-gray-700/80 hover:bg-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
-                    primary ? 'border-orange-500 ring-orange-500' : 'border-white ring-white',
+                    primary ? 'border-green-500' : 'border-white ring-white',
                   )}
                   href={href}
                   key={text}>
