@@ -31,7 +31,7 @@ const Hero: FC = memo(() => {
                 {description}
               </div>
               <div className='flex w-6/12  h-3/6 justify-center'>
-                  <img className='h-3/6 w-3/6' src={'pingu.gif'}/>
+                  <img className='h-3/6 w-3/6' src='pingu.gif'/>
               </div>
             </div>
             {/* <div className="flex gap-x-4 text-neutral-100">
