@@ -22,16 +22,16 @@ const Hero: FC = memo(() => {
           src={imageSrc}
         />
         <div className="z-10 w-11/12 px-4 lg:px-0">
-          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/40 p-6 text-center shadow-lg backdrop-blur-sm">
-            <div className='flex flex-row'>
-              <div className='flex flex-col w-6/12 text-start'>
+          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/40 p-6 pb-0 text-center shadow-lg backdrop-blur-sm">
+            <div className='flex flex-col sm:flex-row'>
+              <div className='flex flex-col w-full text-center sm:w-6/12 sm:text-start'>
                 <h3 className="text-4xl font-bold text-white sm:text-2xl lg:text-6xl sporty-green">{name}</h3>
-                <h3 className="text-s4xl font-bold text-white sm:text-2xl lg:text-6xl">{role1}</h3>
+                <h3 className="text-4xl font-bold text-white sm:text-2xl lg:text-6xl">{role1}</h3>
                 <h3 className="text-4xl font-bold text-white sm:text-2xl lg:text-6xl pb-8">{role2}</h3>
                 {description}
               </div>
-              <div className='flex w-6/12  h-3/6 justify-center'>
-                  <img className='h-3/6 w-3/6' src='pingu.gif'/>
+              <div className='flex w-6/12  h-3/6 justify-center self-center'>
+                  <img className='shrink-0 pt-6 sm:h-3/6 sm:w-3/6 sm:pt-0' src='pingu.gif'/>
               </div>
             </div>
             {/* <div className="flex gap-x-4 text-neutral-100">
@@ -50,6 +50,9 @@ const Hero: FC = memo(() => {
                   {Icon && <Icon className="h-5 w-5 text-white sm:h-6 sm:w-6" />}
                 </a>
               ))}
+            </div>
+            <div className='text-white font-bold text-xl sm:text-3xl'>
+              <h2>My Tech Stack:</h2>
             </div>
           </div>
           <Carousel />
