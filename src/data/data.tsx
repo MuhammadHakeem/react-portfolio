@@ -291,14 +291,14 @@ export const education: TimelineItem[] = [
     date: 'Aug 2022',
     location: 'Multimedia University',
     title: 'BSc (Hons) of Computer Science with Specialization in Software Engineering',
-    content: <p>CGPA: 3.75/4.00 (1st Class Honour)</p>,
+    content: <p className='text-start'>CGPA: <strong>3.75</strong>/4.00 (<strong>1st Class Honour</strong>)</p>,
     logo: 'logoMmu.png'
   },
   {
     date: 'June 2019',
     location: 'UITM Dengkil',
     title: 'Foundation in Science',
-    content: <p>MUET: Band 4</p>,
+    content: <p className='text-start'>MUET: <strong>Band 4</strong></p>,
     logo: 'logoUitmDengkil.png'
   },
 ];
@@ -310,7 +310,7 @@ export const experience: TimelineItem[] = [
     title: 'Researcher (Mobile Division)',
     logo: 'logoTmRnd.png',
     content: (
-      <ul className='text-start pl-2'>
+      <ul className='text-start pl-6 w-11/12 flex flex-col justify-self-center'>
         <li>Developed and mantained 2 mobile apps & 2 website related to Event Management System.</li><hr></hr>
         <li>Used framework/ tools such as Angular v14, Ionic v6, Capacitor v4, Typescript, Bootstrap, Apache Echarts,
         Docker, Fastlane Jasmine, MySQL, Postman, HTML and CSS.</li><hr></hr>
@@ -335,7 +335,7 @@ export const experience: TimelineItem[] = [
     title: 'Technical Analyst (Internship)',
     logo: 'logoOas.png',
     content: (
-      <ul className='text-justify pl-2'>
+      <ul className='text-start pl-6 w-11/12 flex flex-col justify-self-center'>
         <li>Collaborated with a senior developer on a project that involved integrating a REST API and developing the
         front-end of a mobile application using Ionic framework v4. To aid in the development process, we utilized the
         Postman API tool to test and debug our API endpoints.</li>
