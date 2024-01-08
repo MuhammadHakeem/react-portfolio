@@ -292,12 +292,14 @@ export const education: TimelineItem[] = [
     location: 'Multimedia University',
     title: 'BSc (Hons) of Computer Science with Specialization in Software Engineering',
     content: <p>CGPA: 3.75/4.00 (1st Class Honour)</p>,
+    logo: 'logoMmu.png'
   },
   {
     date: 'June 2019',
     location: 'UITM Dengkil',
     title: 'Foundation in Science',
     content: <p>MUET: Band 4</p>,
+    logo: 'logoUitmDengkil.png'
   },
 ];
 
@@ -306,6 +308,7 @@ export const experience: TimelineItem[] = [
     date: 'October 2022 - Present',
     location: 'TM Research & Development',
     title: 'Researcher (Mobile Division)',
+    logo: 'logoTmRnd.png',
     content: (
       <ul className='text-start pl-2'>
         <li>Developed and mantained 2 mobile apps & 2 website related to Event Management System.</li><hr></hr>
@@ -330,6 +333,7 @@ export const experience: TimelineItem[] = [
     date: 'March 2021 - June 2021',
     location: ' Open Architecture Solution Sdn. Bhd.',
     title: 'Technical Analyst (Internship)',
+    logo: 'logoOas.png',
     content: (
       <ul className='text-justify pl-2'>
         <li>Collaborated with a senior developer on a project that involved integrating a REST API and developing the
