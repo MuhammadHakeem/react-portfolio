@@ -27,7 +27,7 @@ const Hero: FC = memo(() => {
               <div className='flex flex-col w-full text-center sm:w-6/12 sm:text-start'>
                 <h3 className="text-4xl font-bold text-white sm:text-2xl lg:text-6xl sporty-green">{name}</h3>
                 <h3 className="text-4xl font-bold text-white sm:text-2xl lg:text-6xl">{role1}</h3>
-                <h3 className="text-4xl font-bold text-white sm:text-2xl lg:text-6xl pb-8">{role2}</h3>
+                <h3 className="text-4xl font-bold text-white sm:text-2xl lg:text-5xl pb-8">{role2}</h3>
                 {description}
               </div>
               <div className='flex w-6/12  h-3/6 justify-center self-center'>
@@ -51,8 +51,8 @@ const Hero: FC = memo(() => {
                 </a>
               ))}
             </div>
-            <div className='text-white font-bold text-xl sm:text-3xl'>
-              <h2>My Tech Stack:</h2>
+            <div className='text-white font-bold text-xl sm:text-2xl'>
+              <h2>Technological Stack & Frameworks:</h2>
             </div>
           </div>
           <Carousel />
@@ -60,7 +60,7 @@ const Hero: FC = memo(() => {
         <div className="absolute inset-x-0 bottom-6 flex justify-center">
           <a
             className="rounded-full bg-white p-1 ring-white ring-offset-2 ring-offset-gray-700/80 focus:outline-none focus:ring-2 sm:p-2"
-            href={`/#${SectionId.About}`}>
+            href={`/#${SectionId.Resume}`}>
             <ChevronDownIcon className="h-5 w-5 bg-transparent sm:h-6 sm:w-6" />
           </a>
         </div>
