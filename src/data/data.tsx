@@ -291,7 +291,10 @@ export const education: TimelineItem[] = [
     date: 'Aug 2022',
     location: 'Multimedia University',
     title: 'BSc (Hons) of Computer Science with Specialization in Software Engineering',
-    content: <p className='text-start'>CGPA: <strong>3.75</strong>/4.00 (<strong>1st Class Honour</strong>)</p>,
+    content: <div>
+                <p className='text-start'>CGPA: <strong>3.75</strong>/4.00 (<strong>1st Class Honour</strong>)</p><hr></hr>
+                <p className='text-start'>FYP: Treat Asthma Climate Region Experience System. (Flutter, Dart & Firebase)</p><hr></hr>
+             </div>,
     logo: 'logoMmu.png'
   },
   {
@@ -311,7 +314,13 @@ export const experience: TimelineItem[] = [
     logo: 'logoTmRnd.png',
     content: (
       <ul className='text-start pl-6 w-11/12 flex flex-col justify-self-center'>
-        <li>Developed and mantained 2 mobile apps & 2 website related to Event Management System.</li><hr></hr>
+        <li>Cross Platform Mobile Apps. (Ionic, Angular & Typescript)</li><hr></hr>
+        <li>Auto Deployement Pipeline. (Fastlane, Docker, Gitlab CI)</li><hr></hr>
+        <li>Multiple Product Flavors. (Gradle)</li><hr></hr>
+        <li>Unit Testing. (Jasmine & Karma)</li><hr></hr>
+        <li>Elegent Visual Design. (Bootstrap & Apache ECharts)</li><hr></hr>
+
+        {/* <li>Developed and mantained 2 mobile apps & 2 website related to Event Management System.</li><hr></hr>
         <li>Used framework/ tools such as Angular v14, Ionic v6, Capacitor v4, Typescript, Bootstrap, Apache Echarts,
         Docker, Fastlane Jasmine, MySQL, Postman, HTML and CSS.</li><hr></hr>
         <li>Implement Auto Deployement Pipeline using Fastlane, Docker and Gitlab for mobile apps release.</li><hr></hr>
@@ -325,7 +334,7 @@ export const experience: TimelineItem[] = [
         documentation.</li><hr></hr>
         <li>Collaborated with the UI/UX team to ensure the user interface and user experience are optimized for mobile
         platforms.</li><hr></hr>
-        <li>Took online Flutter course on Udemy to learn and to implement it into a new project in the near future.</li><hr></hr>
+        <li>Took online Flutter course on Udemy to learn and to implement it into a new project in the near future.</li><hr></hr> */}
       </ul>
     ),
   },
@@ -336,9 +345,10 @@ export const experience: TimelineItem[] = [
     logo: 'logoOas.png',
     content: (
       <ul className='text-start pl-6 w-11/12 flex flex-col justify-self-center'>
-        <li>Collaborated with a senior developer on a project that involved integrating a REST API and developing the
+        <li>Cross Platform Mobile Apps. (Ionic, Angular & Typescript)</li><hr></hr>
+        {/* <li>Collaborated with a senior developer on a project that involved integrating a REST API and developing the
         front-end of a mobile application using Ionic framework v4. To aid in the development process, we utilized the
-        Postman API tool to test and debug our API endpoints.</li>
+        Postman API tool to test and debug our API endpoints.</li> */}
       </ul>
     ),
   },
