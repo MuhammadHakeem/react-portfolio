@@ -207,16 +207,16 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'My Portfolio',
-    description: 'My lovely portfolio or sandbox where I showcase my technical skills and background.',
-    url: 'https://hakeem06.netlify.app/',
-    image: portfolio,
-  },
-  {
     title: 'TACRES',
     description: 'Mobile App Companion for Asthmatic Patients. (Final Year Project for my Bachelor Degree)',
     url: 'https://github.com/MuhammadHakeem/tacres-flutter-fyp',
     image: tacres,
+  },
+  {
+    title: 'My Portfolio',
+    description: 'My lovely portfolio or sandbox where I showcase my technical skills and background.',
+    url: 'https://hakeem06.netlify.app/',
+    image: portfolio,
   }
 ];
 
