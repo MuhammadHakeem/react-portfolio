@@ -1,11 +1,11 @@
-import {ChevronDownIcon} from '@heroicons/react/24/outline';
+// import {ChevronDownIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
 import {FC, memo} from 'react';
 
 import {heroData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
-import Carousel from './Carousel';
+// import Carousel from './Carousel';
 // import Socials from '../Socials';
 
 const Hero: FC = memo(() => {
@@ -22,7 +22,7 @@ const Hero: FC = memo(() => {
           src={imageSrc}
         />
         <div className="z-10 w-11/12 px-4 lg:px-0">
-          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/40 p-6 pb-0 text-center shadow-lg backdrop-blur-sm">
+          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/40 p-6 text-center shadow-lg backdrop-blur-sm">
             <div className='flex flex-col sm:flex-row'>
               <div className='flex flex-col w-full text-center sm:w-6/12 sm:text-start'>
                 <h3 className="text-4xl font-bold text-white sm:text-2xl lg:text-6xl sporty-green">{name}</h3>
@@ -51,19 +51,19 @@ const Hero: FC = memo(() => {
                 </a>
               ))}
             </div>
-            <div className='text-white font-bold text-xl sm:text-2xl'>
+            {/* <div className='text-white font-bold text-xl sm:text-2xl'>
               <h2>Technological Stack & Frameworks:</h2>
-            </div>
+            </div> */}
           </div>
-          <Carousel />
+          {/* <Carousel /> */}
         </div>
-        <div className="absolute inset-x-0 bottom-6 flex justify-center">
+        {/* <div className="absolute inset-x-0 bottom-6 flex justify-center">
           <a
             className="rounded-full bg-white p-1 ring-white ring-offset-2 ring-offset-gray-700/80 focus:outline-none focus:ring-2 sm:p-2"
             href={`/#${SectionId.Resume}`}>
             <ChevronDownIcon className="h-5 w-5 bg-transparent sm:h-6 sm:w-6" />
           </a>
-        </div>
+        </div> */}
       </div>
     </Section>
   );

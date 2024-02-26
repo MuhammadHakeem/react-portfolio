@@ -30,7 +30,20 @@ import {
   Social,
   TestimonialSection,
   TimelineItem,
+  techStack,
 } from './dataDef';
+import AngularIcon from 'components/Icon/AngularIcon';
+import TypescriptIcon from 'components/Icon/TypescriptIcon';
+import ReactIcon from 'components/Icon/ReactIcon';
+import DartIcon from 'components/Icon/DartIcon';
+import BootstrapIcon from 'components/Icon/BootstrapIcon';
+import TailwindIcon from 'components/Icon/TailwindIcon';
+import IonicIcon from 'components/Icon/IonicIcon';
+import FlutterIcon from 'components/Icon/FlutterIcon';
+import DockerIcon from 'components/Icon/DockerIcon';
+import GradleIcon from 'components/Icon/GradleIcon';
+import JasmineIcon from 'components/Icon/JasmineIcon';
+import GitlabIcon from 'components/Icon/GitlabIcon';
 
 /**
  * Page meta data
@@ -240,6 +253,73 @@ export const education: TimelineItem[] = [
     title: 'Foundation in Science',
     content: <p className='text-start'>MUET: <strong>Band 4</strong></p>,
     logo: 'logoUitmDengkil.png'
+  },
+];
+
+export const jsFrameworks: techStack[] = [
+  {
+    name: 'Angular',
+    icon: AngularIcon
+  },
+  {
+    name: 'React',
+    icon: ReactIcon
+  },
+];
+
+export const progLang: techStack[] = [
+  {
+    name: 'Typescript',
+    icon: TypescriptIcon
+  },
+  {
+    name: 'Dart',
+    icon: DartIcon
+  },
+];
+
+export const cssFrameWorks: techStack[] = [
+  {
+    name: 'Bootstrap',
+    icon: BootstrapIcon
+  },
+  {
+    name: 'Tailwind',
+    icon: TailwindIcon
+  },
+];
+
+export const mobileFrameWorks: techStack[] = [
+  {
+    name: 'Ionic',
+    icon: IonicIcon
+  },
+  {
+    name: 'Flutter',
+    icon: FlutterIcon
+  },
+];
+
+export const otherSoftware: techStack[] = [
+  {
+    name: 'Docker',
+    icon: DockerIcon
+  },
+  {
+    name: 'Github',
+    icon: GithubIcon
+  },
+  {
+    name: 'Gradle',
+    icon: GradleIcon
+  },
+  {
+    name: 'Jasmine',
+    icon: JasmineIcon
+  },
+  {
+    name: 'Gitlab',
+    icon: GitlabIcon
   },
 ];
 

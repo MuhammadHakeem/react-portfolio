@@ -70,6 +70,11 @@ export interface Skill {
   max?: number;
 }
 
+export interface techStack {
+  name: string;
+  icon: FC<IconProps>;
+}
+
 export interface SkillGroup {
   name: string;
   skills: Skill[];
