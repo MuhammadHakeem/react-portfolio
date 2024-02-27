@@ -11,9 +11,9 @@ import Section from '../Layout/Section';
 
 const Portfolio: FC = memo(() => {
   return (
-    <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
+    <Section className="bg-neutral-800" sectionId={SectionId.Project}>
       <div className="flex flex-col gap-y-8">
-        <h2 className="self-center text-xl font-bold text-white">Check Out Some of My Project:</h2>
+        <h2 className="self-center text-2xl font-bold sporty-green uppercase">My Side Project:</h2>
         <div className=" w-full row-2 md:row-2">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
