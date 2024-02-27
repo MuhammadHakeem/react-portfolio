@@ -61,9 +61,9 @@ export const SectionId = {
   About: 'about',
   Contact: 'contact',
   Portfolio: 'portfolio',
-  Resume: 'resume',
-  Skills: 'skills',
-  Stats: 'stats',
+  Experience: 'experience',
+  TechStack: 'techstack',
+  Project: 'project',
   Testimonials: 'testimonials',
   Carousel: 'carousel',
   Typed: 'typed'

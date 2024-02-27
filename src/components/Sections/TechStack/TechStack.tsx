@@ -11,8 +11,8 @@ const Hero: FC = memo(() => {
   const {imageSrc, name,} = heroData;
 
   return (
-    <Section noPadding sectionId={SectionId.About} className='py-8 px-8'>
-      <div className="relative flex flex-col w-full items-center justify-center rounded-xl bg-gray-800/40">
+    <Section noPadding sectionId={SectionId.TechStack} className='py-8 px-8'>
+      <div className="relative flex flex-col sm:flex-row w-full items-center justify-center rounded-xl bg-gray-800/40">
         <Image
           alt={`${name}-image`}
           className="absolute -z-10 h-full w-full object-cover"
@@ -23,7 +23,7 @@ const Hero: FC = memo(() => {
         <div className='text-white font-bold text-2xl sm:text-2xl py-6'>
           <h2 className='uppercase text-center sporty-green'>My Technological Stack & Frameworks:</h2>
         </div>
-        <div className="flex flex-col flex-wrap justify-center items-center sm:flex-row py-6 min-h-[50vh] sm:items-baseline">
+        <div className="flex flex-col flex-wrap justify-center items-center content-center sm:flex-row py-6 min-h-[100vh] sm:items-baseline p-6">
           <div className='pt-4 sm:ml-4 !border-0 w-fit'>
             <div className="flex flex-row justify-center bg-white rounded-lg p-4 relative">
               {jsFrameworks.map((item) => (
@@ -76,7 +76,7 @@ const Hero: FC = memo(() => {
             <h1 className='pt-2 sm:pt-4 font-bold capitalize text-center text-white bottom-0'>CSS frameworks</h1>
           </div>
           <div className='pt-4 sm:ml-4 !border-0 w-fit'>
-            <div className="flex flex-row justify-center bg-white rounded-lg p-4 relative">
+            <div className="flex flex-row flex-wrap justify-center bg-white rounded-lg p-4 relative">
               {otherSoftware.map((item) => (
                 <div className="text-black flex flex-col p-2 flex items-center">
                   <item.icon className="h-14 w-14 sm:h-14 sm:w-14"/>
