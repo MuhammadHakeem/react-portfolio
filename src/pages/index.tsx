@@ -1,16 +1,13 @@
 import dynamic from 'next/dynamic';
 import {FC, memo} from 'react';
-
 import Page from '../components/Layout/Page';
-// import About from '../components/Sections/About';
 import Contact from '../components/Sections/Contact';
 import Footer from '../components/Sections/Footer';
 import Hero from '../components/Sections/Hero';
-import Resume from '../components/Sections/Resume';
 import {homePageMeta} from '../data/data';
 import Portfolio from 'components/Sections/Portfolio';
 import TechStack from 'components/Sections/TechStack/TechStack';
-// import Testimonials from 'components/Sections/Testimonials';
+import WebAppInterface from 'components/Sections/WebAppInterface'
 
 // eslint-disable-next-line react-memo/require-memo
 const Header = dynamic(() => import('../components/Sections/Header'), {ssr: false});
@@ -22,8 +19,10 @@ const Home: FC = memo(() => {
       <Header />
       <Hero />
       <TechStack/>
+      {/* <Carousel/> */}
+      <WebAppInterface/>
       {/* <About /> */}
-      <Resume />
+      {/* <Resume /> */}
       <Portfolio />
       {/* <Testimonials />  */}
       <Contact />

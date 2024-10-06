@@ -66,7 +66,8 @@ export const SectionId = {
   Project: 'project',
   Testimonials: 'testimonials',
   Carousel: 'carousel',
-  Typed: 'typed'
+  Typed: 'typed',
+  WebAppsInterface: 'Web & Apps Interface'
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
