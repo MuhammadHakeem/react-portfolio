@@ -23,20 +23,17 @@ const images = [
   },
 ];
 
-const webAppInterface: FC = memo(() => {
+const WebAppInterface: FC = memo(() => {
     return (
       <Section noPadding sectionId={SectionId.WebAppsInterface}>
-        <div className='text-white font-bold text-2xl sm:text-2xl py-6'>
-          <h2 className='uppercase text-center sporty-green'>User Interface Design:</h2>
-        </div>
-        <div className='w-full flex justify-center'>
-
-            <ImageGallery items={images} additionalClass='w-full md:w-4/5'/>;
+        <div className='text-white font-bold text-2xl sm:text-2xl gap-y-8 h-screen flex justify-center items-center flex-col'>
+            <h2 className='uppercase text-center sporty-green'>My Previous Works on Website & Mobile Apps:</h2>
+            <ImageGallery items={images} additionalClass='w-full md:w-3/5'/>;
         </div>
       </Section>
     );
   });
   
-  webAppInterface.displayName = 'webAppInterface';
-  export default webAppInterface;
+  WebAppInterface.displayName = 'webAppInterface';
+  export default WebAppInterface;
   
