@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { FC, memo } from 'react';
 import ImageGallery from 'react-image-gallery';
-import {FC, memo} from 'react';
 import {SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 import attachment1 from 'images/webAppInterface/table-mom.png'
