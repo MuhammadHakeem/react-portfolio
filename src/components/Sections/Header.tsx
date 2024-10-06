@@ -11,14 +11,12 @@ export const headerID = 'headerNav';
 
 const Header: FC = memo(() => {
   const [currentSection, setCurrentSection] = useState<SectionId | null>(null);
-  const navSections = useMemo(() => [SectionId.About, SectionId.TechStack, SectionId.WebAppsInterface, SectionId.Experience, SectionId.Project, SectionId.Contact], []);
+  const navSections = useMemo(() => [SectionId.About, SectionId.TechStack, SectionId.WebAppsInterface, SectionId.Project, SectionId.Contact], []);
 
   const intersectionHandler = useCallback((section: SectionId | null) => {
     section && setCurrentSection(section);
   }, []);
-
   useNavObserver(navSections.map(section => `#${section}`).join(','), intersectionHandler);
-
   return (
     <>
       <MobileNav currentSection={currentSection} navSections={navSections} />
@@ -30,7 +28,7 @@ const Header: FC = memo(() => {
 const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}> = memo(
   ({navSections, currentSection}) => {
     const baseClass =
-      '-m-1.5 p-1.5 rounded-md font-bold first-letter:uppercase hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 sm:hover:text-green-500 text-neutral-100';
+      '-m-1.5 p-1.5 rounded-md font-bold capitalize hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 sm:hover:text-green-500 text-neutral-100';
     const activeClass = classNames(baseClass, 'text-green-500');
     const inactiveClass = classNames(baseClass, 'text-neutral-100');
     return (
@@ -60,7 +58,7 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
     }, [isOpen]);
 
     const baseClass =
-      'p-2 rounded-md first-letter:uppercase transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500';
+      'p-2 rounded-md capitalize transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500';
     const activeClass = classNames(baseClass, 'bg-neutral-900 text-white font-bold');
     const inactiveClass = classNames(baseClass, 'text-neutral-200 font-medium');
     return (
