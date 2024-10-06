@@ -15,7 +15,16 @@ declare module '*.svg' {
 }
 
 declare module '*.png' {
-  const value: string;
+  // https://nextjs.org/docs/pages/api-reference/components/image
+  // Next.js's Image component data type
+  const value: {
+    src: string;
+    height: number;
+    width: number;s
+    blurDataURL?: string;
+    blurWidth?: number;
+    blurHeight?: number;
+  };
   export default value;
 }
 
