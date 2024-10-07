@@ -2,9 +2,17 @@ import Image from 'next/image';
 import {FC, memo} from 'react';
 import {heroData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
+import { useRouter } from 'next/router';
+import Button from '@mui/material/Button';
 
 const Hero: FC = memo(() => {
   const {imageSrc, name, description, role1, role2} = heroData;
+  const router = useRouter(); // Get the router instance
+
+   // Function to handle navigation
+   const navigateTo =() => {
+    router.push('/table-listing'); // Navigate to the specified path
+  };
 
   return (
     <Section noPadding sectionId={SectionId.About}>
@@ -29,6 +37,9 @@ const Hero: FC = memo(() => {
                   <img className='shrink-0 pt-6 sm:h-3/6 sm:w-3/6 sm:pt-0' src='pingu.gif'/>
               </div>
             </div>
+          </div>
+          <div className='flex justify-end pt-12'>
+            <Button variant='contained' onClick={navigateTo}>User Interface Design Using React Material UI</Button>
           </div>
         </div>
       </div>
