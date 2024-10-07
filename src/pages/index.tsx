@@ -19,14 +19,14 @@ const Home: FC = memo(() => {
       <Header />
       <Hero />
       <TechStack/>
-      {/* <Carousel/> */}
       <WebAppInterface/>
-      {/* <About /> */}
-      {/* <Resume /> */}
       <Portfolio />
-      {/* <Testimonials />  */}
       <Contact />
       <Footer />
+      {/* <About /> */}
+      {/* <Resume /> */}
+      {/* <Testimonials />  */}
+      {/* <Carousel/> */}
     </Page>
   );
 });
