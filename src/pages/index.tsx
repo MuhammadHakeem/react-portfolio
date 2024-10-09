@@ -7,7 +7,7 @@ import Hero from '../components/Sections/Hero';
 import {homePageMeta} from '../data/data';
 import Portfolio from 'components/Sections/Portfolio';
 import TechStack from 'components/Sections/TechStack/TechStack';
-import WebAppInterface from 'components/Sections/WebAppInterface'
+import WebAppInterface from 'components/Sections/WebAppInterface';
 
 // eslint-disable-next-line react-memo/require-memo
 const Header = dynamic(() => import('../components/Sections/Header'), {ssr: false});
@@ -18,8 +18,8 @@ const Home: FC = memo(() => {
     <Page description={description} title={title}>
       <Header />
       <Hero />
-      <TechStack/>
-      <WebAppInterface/>
+      <TechStack />
+      <WebAppInterface />
       <Portfolio />
       <Contact />
       <Footer />
