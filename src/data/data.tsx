@@ -17,7 +17,6 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
 import tacres from '../images/portfolio/tacres.png';
 import portfolio from '../images/portfolio/portfolio.png';
-import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -67,7 +66,7 @@ export const SectionId = {
   Testimonials: 'testimonials',
   Carousel: 'carousel',
   Typed: 'typed',
-  WebAppsInterface: 'WebAppInterface'
+  WebAppsInterface: 'WebAppInterface',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -115,7 +114,6 @@ export const heroData: Hero = {
  * About section
  */
 export const aboutData: About = {
-  profileImageSrc: profilepic,
   description: `Passionate tech enthusiast and skilled mobile developer with a knack for creating innovative and user-friendly mobile
   applications. Strong problem-solving abilities and an aptitude for working collaboratively with cross-functional teams.
   Committed to staying up-to-date with the latest mobile development trends and technologies to deliver cutting-edge
@@ -231,7 +229,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'My lovely portfolio or sandbox where I showcase my technical skills and background.',
     url: 'https://hakeem06.netlify.app/',
     image: portfolio,
-  }
+  },
 ];
 
 /**
@@ -242,85 +240,95 @@ export const education: TimelineItem[] = [
     date: 'Aug 2022',
     location: 'Multimedia University',
     title: 'BSc (Hons) of Computer Science with Specialization in Software Engineering',
-    content: <div>
-                <p className='text-start'>CGPA: <strong>3.75</strong>/4.00 (<strong>1st Class Honour</strong>)</p><hr></hr>
-                <p className='text-start'>FYP: Treat Asthma Climate Region Experience System. (Flutter, Dart & Firebase)</p><hr></hr>
-             </div>,
-    logo: 'logoMmu.png'
+    content: (
+      <div>
+        <p className="text-start">
+          CGPA: <strong>3.75</strong>/4.00 (<strong>1st Class Honour</strong>)
+        </p>
+        <hr></hr>
+        <p className="text-start">FYP: Treat Asthma Climate Region Experience System. (Flutter, Dart & Firebase)</p>
+        <hr></hr>
+      </div>
+    ),
+    logo: 'logoMmu.png',
   },
   {
     date: 'June 2019',
     location: 'UITM Dengkil',
     title: 'Foundation in Science',
-    content: <p className='text-start'>MUET: <strong>Band 4</strong></p>,
-    logo: 'logoUitmDengkil.png'
+    content: (
+      <p className="text-start">
+        MUET: <strong>Band 4</strong>
+      </p>
+    ),
+    logo: 'logoUitmDengkil.png',
   },
 ];
 
 export const jsFrameworks: techStack[] = [
   {
     name: 'Angular',
-    icon: AngularIcon
+    icon: AngularIcon,
   },
   {
     name: 'React',
-    icon: ReactIcon
+    icon: ReactIcon,
   },
 ];
 
 export const progLang: techStack[] = [
   {
     name: 'Typescript',
-    icon: TypescriptIcon
+    icon: TypescriptIcon,
   },
   {
     name: 'Dart',
-    icon: DartIcon
+    icon: DartIcon,
   },
 ];
 
 export const cssFrameWorks: techStack[] = [
   {
     name: 'Bootstrap',
-    icon: BootstrapIcon
+    icon: BootstrapIcon,
   },
   {
     name: 'Tailwind',
-    icon: TailwindIcon
+    icon: TailwindIcon,
   },
 ];
 
 export const mobileFrameWorks: techStack[] = [
   {
     name: 'Ionic',
-    icon: IonicIcon
+    icon: IonicIcon,
   },
   {
     name: 'Flutter',
-    icon: FlutterIcon
+    icon: FlutterIcon,
   },
 ];
 
 export const otherSoftware: techStack[] = [
   {
     name: 'Docker',
-    icon: DockerIcon
+    icon: DockerIcon,
   },
   {
     name: 'Github',
-    icon: GithubIcon
+    icon: GithubIcon,
   },
   {
     name: 'Gradle',
-    icon: GradleIcon
+    icon: GradleIcon,
   },
   {
     name: 'Jasmine',
-    icon: JasmineIcon
+    icon: JasmineIcon,
   },
   {
     name: 'Gitlab',
-    icon: GitlabIcon
+    icon: GitlabIcon,
   },
 ];
 
@@ -331,12 +339,17 @@ export const experience: TimelineItem[] = [
     title: 'Researcher (Mobile Division)',
     logo: 'logoTmRnd.png',
     content: (
-      <ul className='text-start pl-6 w-11/12 flex flex-col justify-self-center'>
-        <li>Cross Platform Mobile Apps. (Ionic, Angular & Typescript)</li><hr></hr>
-        <li>Auto Deployement Pipeline. (Fastlane, Docker, Gitlab CI)</li><hr></hr>
-        <li>Multiple Product Flavors. (Gradle)</li><hr></hr>
-        <li>Unit Testing. (Jasmine & Karma)</li><hr></hr>
-        <li>Elegent Visual Design. (Bootstrap & Apache ECharts)</li><hr></hr>
+      <ul className="text-start pl-6 w-11/12 flex flex-col justify-self-center">
+        <li>Cross Platform Mobile Apps. (Ionic, Angular & Typescript)</li>
+        <hr></hr>
+        <li>Auto Deployement Pipeline. (Fastlane, Docker, Gitlab CI)</li>
+        <hr></hr>
+        <li>Multiple Product Flavors. (Gradle)</li>
+        <hr></hr>
+        <li>Unit Testing. (Jasmine & Karma)</li>
+        <hr></hr>
+        <li>Elegent Visual Design. (Bootstrap & Apache ECharts)</li>
+        <hr></hr>
 
         {/* <li>Developed and mantained 2 mobile apps & 2 website related to Event Management System.</li><hr></hr>
         <li>Used framework/ tools such as Angular v14, Ionic v6, Capacitor v4, Typescript, Bootstrap, Apache Echarts,
@@ -362,8 +375,9 @@ export const experience: TimelineItem[] = [
     title: 'Technical Analyst (Internship)',
     logo: 'logoOas.png',
     content: (
-      <ul className='text-start pl-6 w-11/12 flex flex-col justify-self-center'>
-        <li>Cross Platform Mobile Apps. (Ionic, Angular & Typescript)</li><hr></hr>
+      <ul className="text-start pl-6 w-11/12 flex flex-col justify-self-center">
+        <li>Cross Platform Mobile Apps. (Ionic, Angular & Typescript)</li>
+        <hr></hr>
         {/* <li>Collaborated with a senior developer on a project that involved integrating a REST API and developing the
         front-end of a mobile application using Ionic framework v4. To aid in the development process, we utilized the
         Postman API tool to test and debug our API endpoints.</li> */}

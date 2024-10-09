@@ -1,7 +1,7 @@
-import React, {Component} from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React, {Component} from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import AngularIcon from 'components/Icon/AngularIcon';
 import IonicIcon from 'components/Icon/IonicIcon';
 import GradleIcon from 'components/Icon/GradleIcon';
@@ -16,9 +16,9 @@ import BootstrapIcon from 'components/Icon/BootstrapIcon';
 
 export default class AutoPlay extends Component {
   slidesToShow: number = 6;
-  
+
   componentDidMount() {
-    window.addEventListener("resize", this.resize.bind(this));
+    window.addEventListener('resize', this.resize.bind(this));
     this.resize();
   }
 
@@ -28,16 +28,15 @@ export default class AutoPlay extends Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.resize.bind(this));
+    window.removeEventListener('resize', this.resize.bind(this));
   }
 
   setIsMobile() {
-    const isMobile = (window.innerWidth <= 760)
-    if(!isMobile) {
+    const isMobile = window.innerWidth <= 760;
+    if (!isMobile) {
       this.slidesToShow = 6;
       return 6;
-    }
-    else{ 
+    } else {
       this.slidesToShow = 4;
       return 4;
     }
