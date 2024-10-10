@@ -2,24 +2,47 @@ import React, {FC, memo} from 'react';
 import ImageGallery from 'react-image-gallery';
 import {SectionId} from '../../data/data';
 import Section from '../Layout/Section';
-import attachment1 from 'images/webAppInterface/table-mom.png';
+import attachment1 from 'images/webAppInterface/add-building-dialog.png';
+import attachment2 from 'images/webAppInterface/agenda.png';
+import attachment3 from 'images/webAppInterface/attendance-list.png';
+import attachment4 from 'images/webAppInterface/building-details.png';
+import attachment5 from 'images/webAppInterface/building-listing.png';
+import attachment6 from 'images/webAppInterface/mom-listing.png';
+import attachment7 from 'images/webAppInterface/table-mom.png';
+import attachment8 from 'images/webAppInterface/table-with-filter.png';
 
 const images = [
   {
     original: attachment1.src,
-    thumbnail: 'https://picsum.photos/id/1018/250/150/',
+    thumbnail: attachment1.src,
   },
   {
-    original: attachment1.src,
-    thumbnail: 'https://picsum.photos/id/1018/250/150/',
+    original: attachment2.src,
+    thumbnail: attachment2.src,
   },
   {
-    original: attachment1.src,
-    thumbnail: 'https://picsum.photos/id/1018/250/150/',
+    original: attachment3.src,
+    thumbnail: attachment3.src,
   },
   {
-    original: attachment1.src,
-    thumbnail: 'https://picsum.photos/id/1018/250/150/',
+    original: attachment4.src,
+    thumbnail: attachment4.src,
+  },
+  {
+    original: attachment5.src,
+    thumbnail: attachment5.src,
+  },
+  {
+    original: attachment6.src,
+    thumbnail: attachment6.src,
+  },
+  {
+    original: attachment7.src,
+    thumbnail: attachment7.src,
+  },
+  {
+    original: attachment8.src,
+    thumbnail: attachment8.src,
   },
 ];
 
