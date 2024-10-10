@@ -39,7 +39,7 @@ const Hero: FC = memo(() => {
             </div>
           </div>
           <div className="flex justify-end pt-12">
-            <Button variant="contained" onClick={navigateTo}>
+            <Button variant="contained" onClick={navigateTo} className='bg-sky-700'>
               User Interface Design Using React Material UI
             </Button>
           </div>
