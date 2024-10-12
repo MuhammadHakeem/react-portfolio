@@ -51,7 +51,7 @@ const WebAppInterface: FC = memo(() => {
     <Section noPadding sectionId={SectionId.WebAppsInterface}>
       <div className="text-white font-bold text-2xl sm:text-2xl gap-y-8 h-screen flex justify-center items-center flex-col">
         <h2 className="uppercase text-center sporty-green">My Previous Works on Website & Mobile Apps:</h2>
-        <ImageGallery items={images} additionalClass="w-full md:w-3/5" />
+        <ImageGallery items={images} additionalClass="w-full md:w-3/5 content-center	" />
       </div>
     </Section>
   );
