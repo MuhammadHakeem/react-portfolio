@@ -4,6 +4,11 @@ module.exports = {
   // darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
+      zIndex: {
+        '-10': '-10',
+        '-20': '-20',
+        '-30': '-30',
+      },
       colors: {
         yellow: '#efc603',
       },

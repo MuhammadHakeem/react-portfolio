@@ -60,7 +60,7 @@ const WebAppInterface: FC = memo(() => {
           src={imageSrc}
       />
       <div className="text-white font-bold text-2xl sm:text-2xl gap-y-8 h-screen flex justify-center items-center flex-col z-10 relative">
-        <h2 className="uppercase text-center sporty-green">My Previous Works on Website & Mobile Apps:</h2>
+        <h2 className="uppercase text-center sporty-green">My Previous Works on Website:</h2>
         <ImageGallery items={images} additionalClass="w-full md:w-3/5 content-center	" />
       </div>
     </Section>
