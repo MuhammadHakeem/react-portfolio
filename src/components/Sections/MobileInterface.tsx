@@ -48,7 +48,7 @@ const MobileInterface: FC = memo(() => {
     <Section noPadding sectionId={SectionId.MobileInterface}>
       <Image
           alt={`${name}-image`}
-          className="absolute z--10 inset-0"
+          className="absolute z--10 inset-0 h-screen"
           placeholder="blur"
           priority
           src={imageSrc}
