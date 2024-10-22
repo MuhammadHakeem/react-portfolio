@@ -40,7 +40,7 @@ const Hero: FC = memo(() => {
             {items: otherSoftware, color: 'green-600', label: 'other software'},
           ].map(({items, color, label}, index) => (
             <div className="pt-4 sm:ml-4 !border-0 w-fit" key={index}>
-              <div className="flex flex-row justify-center bg-white rounded-lg p-4 relative">
+              <div className="grid grid-cols-2 sm:auto-cols-max bg-white rounded-lg p-4">
                 {items.map(item => (
                   <div className="text-black flex flex-col p-2 flex items-center" key={item.name}>
                     <item.icon className="h-14 w-14 sm:h-14 sm:w-14" />
