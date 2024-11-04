@@ -16,7 +16,7 @@ const Hero: FC = memo(() => {
   const { imageSrc, name } = heroData;
 
   const techStacks = [
-    { items: jsFrameworks, color: 'red-600', label: 'JavaScript Frameworks' },
+    { items: jsFrameworks, color: 'red-600', label: 'JavaScript Frameworks ' },
     { items: mobileFrameWorks, color: 'blue-600', label: 'Mobile Frameworks' },
     { items: progLang, color: 'yellow-600', label: 'Programming Languages' },
     { items: cssFrameWorks, color: 'green-600', label: 'CSS Frameworks' },
