@@ -48,7 +48,7 @@ const Hero: FC = memo(() => {
                     key={item.name}
                   >
                     <item.icon className="h-14 w-14 sm:h-14 sm:w-14" />
-                    <label className="font-bold self-center text-gray-600">
+                    <label className="font-bold self-center text-gray-600 ">
                       {item.name}
                     </label>
                   </div>
