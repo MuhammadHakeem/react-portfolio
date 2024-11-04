@@ -35,7 +35,7 @@ const Hero: FC = memo(() => {
         />
         <div className="text-white font-bold text-2xl sm:text-2xl py-6">
           <h2 className="uppercase text-center sporty-green">
-            My Technological Stack & Frameworks: 
+            My Technological Stack & Frameworks:
           </h2>
         </div>
         <div className="flex flex-col flex-wrap justify-center items-center content-center sm:flex-row py-6 min-h-[100vh] sm:items-baseline p-6">
