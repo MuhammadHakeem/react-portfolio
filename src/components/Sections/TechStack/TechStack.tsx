@@ -20,7 +20,7 @@ const Hero: FC = memo(() => {
     { items: mobileFrameWorks, color: 'blue-600', label: 'Mobile Frameworks' },
     { items: progLang, color: 'yellow-600', label: 'Programming Languages' },
     { items: cssFrameWorks, color: 'green-600', label: 'CSS Frameworks' },
-    { items: otherSoftware, color: 'purple-600', label: 'Other Software' },
+    { items: otherSoftware, color: 'purple-600', label: 'Other Software ' },
   ];
 
   return (
