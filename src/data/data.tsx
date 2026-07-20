@@ -115,17 +115,24 @@ export const heroData: Hero = {
  * About section
  */
 export const aboutData: About = {
-  description: `Passionate tech enthusiast and skilled mobile developer with a knack for creating innovative and user-friendly mobile
-  applications. Strong problem-solving abilities and an aptitude for working collaboratively with cross-functional teams.
-  Committed to staying up-to-date with the latest mobile development trends and technologies to deliver cutting-edge
-  solutions.`,
+  description: `I am a passionate software developer with experience in building modern web applications using technologies
+  such as Java Spring Boot, Angular, TypeScript, and PostgreSQL. I enjoy designing clean, efficient, and scalable systems
+  that deliver meaningful user experiences.
+
+  I have a strong interest in backend development and full-stack architecture, focusing on writing maintainable code and
+  creating intuitive interfaces. I continuously seek opportunities to learn new technologies, improve my problem-solving
+  skills, and contribute to impactful projects.
+
+  Beyond technical development, I value collaboration and enjoy working with teams to turn ideas into practical
+  solutions. I believe that great software is built not only with good code but also with good communication and
+  teamwork.`,
   aboutItems: [
     {label: 'Location', text: 'B.B. Bangi, Selangor', Icon: MapIcon},
     // {label: 'Age', text: '23', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Malaysian', Icon: FlagIcon},
     {label: 'Interests', text: 'Basketball, Skipping, Jogging, MOBA Games', Icon: SparklesIcon},
     {label: 'Study', text: 'Multimedia University', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'TM Research & Development', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'EPF Malaysia', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -195,6 +202,18 @@ export const skills: SkillGroup[] = [
     name: 'Backend Development',
     skills: [
       {
+        name: 'Java',
+        level: 7,
+      },
+      {
+        name: 'Spring Boot',
+        level: 7,
+      },
+      {
+        name: 'PostgreSQL',
+        level: 6,
+      },
+      {
         name: 'Node.js',
         level: 6,
       },
@@ -246,6 +265,8 @@ export const education: TimelineItem[] = [
         <p className="text-start">
           CGPA: <strong>3.75</strong>/4.00 (<strong>1st Class Honour</strong>)
         </p>
+        <hr></hr>
+        <p className="text-start">Receiver of Books Award</p>
         <hr></hr>
         <p className="text-start">FYP: Treat Asthma Climate Region Experience System. (Flutter, Dart & Firebase)</p>
         <hr></hr>
@@ -335,53 +356,107 @@ export const otherSoftware: techStack[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'October 2022 - Present',
-    location: 'TM Research & Development',
-    title: 'Researcher (Mobile Division)',
-    logo: 'logoTmRnd.png',
+    date: 'March 2026 - Present',
+    location: 'EPF Malaysia',
+    title: 'Java Spring Boot Developer',
+    logo: 'logoEpf.png',
     content: (
       <ul className="text-start pl-6 w-11/12 flex flex-col justify-self-center">
-        <li>Cross Platform Mobile Apps. (Ionic, Angular & Typescript)</li>
+        <li>Building backend services and features using Java, Spring Boot, and PostgreSQL.</li>
         <hr></hr>
-        <li>Auto Deployement Pipeline. (Fastlane, Docker, Gitlab CI)</li>
-        <hr></hr>
-        <li>Multiple Product Flavors. (Gradle)</li>
-        <hr></hr>
-        <li>Unit Testing. (Jasmine & Karma)</li>
-        <hr></hr>
-        <li>Elegent Visual Design. (Bootstrap & Apache ECharts)</li>
-        <hr></hr>
-
-        {/* <li>Developed and mantained 2 mobile apps & 2 website related to Event Management System.</li><hr></hr>
-        <li>Used framework/ tools such as Angular v14, Ionic v6, Capacitor v4, Typescript, Bootstrap, Apache Echarts,
-        Docker, Fastlane Jasmine, MySQL, Postman, HTML and CSS.</li><hr></hr>
-        <li>Implement Auto Deployement Pipeline using Fastlane, Docker and Gitlab for mobile apps release.</li><hr></hr>
-        <li>Set up Angular Unit Test Gitlab Continuous Integration (CI) Pipeline using Docker and Gitlab.</li><hr></hr>
-        <li>Implemented Unit Tests using Jasmine and Karma on fresh mobile apps project.</li><hr></hr>
-        <li>Built & released APK using Android Studio to Firebase App Distribution for Android platform.</li><hr></hr>
-        <li>Used Swagger and Postman to test API endpoint and responses.</li><hr></hr>
-        <li>Utilized GitLab to manage code, control versions, and implement effective branching strategies.</li><hr></hr>
-        <li>Leveraged Jira and Confluence to facilitate communication and collaboration.</li><hr></hr>
-        <li>Participated in the complete software development lifecycle, including coding, testing, debugging, and
-        documentation.</li><hr></hr>
-        <li>Collaborated with the UI/UX team to ensure the user interface and user experience are optimized for mobile
-        platforms.</li><hr></hr>
-        <li>Took online Flutter course on Udemy to learn and to implement it into a new project in the near future.</li><hr></hr> */}
       </ul>
     ),
   },
   {
-    date: 'March 2021 - June 2021',
-    location: ' Open Architecture Solution Sdn. Bhd.',
+    date: 'February 2025 - April 2026',
+    location: 'Accenture Southeast Asia',
+    title: 'Software Development Senior Analyst',
+    logo: 'logoAccenture.png',
+    content: (
+      <ul className="text-start pl-6 w-11/12 flex flex-col justify-self-center">
+        <li>
+          Ensured 99%+ policy processing SLA by troubleshooting Production failures, reprocessing via Postman APIs,
+          and validating WS responses.
+        </li>
+        <hr></hr>
+        <li>Oracle-to-PostgreSQL migration, refactoring SQL scripts, JasperReports, and MyBatis mappers.</li>
+        <hr></hr>
+        <li>Validated data integrity and API functionality through E2E testing post-DB migration.</li>
+        <hr></hr>
+        <li>Enhanced cross-system integration by maintaining external JAR dependencies, ensuring timely updates.</li>
+        <hr></hr>
+        <li>Deployed and validated WAR files on Tomcat (SIT), optimizing application stability.</li>
+        <hr></hr>
+        <li>Implemented audit-ready unit testing (Excel-based) for all PRs, covering test cases to sign-offs.</li>
+        <hr></hr>
+        <li>Mentored junior developers in Ionic mobile app setup and local environment configuration.</li>
+        <hr></hr>
+        <li>Improved onboarding by creating user guides for 3 channels, boosting team/client usability.</li>
+        <hr></hr>
+        <li>
+          Authored System Understanding Documents (SUDs) for two insurance applications, detailing
+          technical/business workflows.
+        </li>
+        <hr></hr>
+        <li>
+          Awarded &quot;Playback Top Scorers&quot; (Top 10/33) for delivering top-tier system walkthroughs to
+          clients and leadership.
+        </li>
+        <hr></hr>
+      </ul>
+    ),
+  },
+  {
+    date: 'October 2022 - January 2025',
+    location: 'TM Research & Development',
+    title: 'Mobile Developer',
+    logo: 'logoTmRnd.png',
+    content: (
+      <ul className="text-start pl-6 w-11/12 flex flex-col justify-self-center">
+        <li>Developed and maintained 2 mobile apps related to Event Management System on a Scrum Team.</li>
+        <hr></hr>
+        <li>
+          Used framework/tools such as Angular v14, Ionic v6, Capacitor v4, Typescript, Docker, Jasmine, MySQL,
+          Postman, HTML and CSS throughout the development.
+        </li>
+        <hr></hr>
+        <li>Set up Angular Unit Test Gitlab Continuous Integration (CI) Pipeline using Docker.</li>
+        <hr></hr>
+        <li>Implemented Unit Tests using Jasmine and Karma on existing projects.</li>
+        <hr></hr>
+        <li>Built & released APK using Android Studio to Firebase App Distribution for Android platform.</li>
+        <hr></hr>
+        <li>Used Swagger and Postman to test API endpoint and responses.</li>
+        <hr></hr>
+        <li>Utilized Gitlab for code management and versioning.</li>
+        <hr></hr>
+        <li>Leveraged Jira and Confluence to facilitate communication and collaboration.</li>
+        <hr></hr>
+        <li>
+          Participated in the complete software development lifecycle, including coding, testing, debugging, and
+          documentation.
+        </li>
+        <hr></hr>
+        <li>
+          Collaborated with the UI/UX team to ensure the user interface and user experience are optimized for
+          mobile platforms.
+        </li>
+        <hr></hr>
+      </ul>
+    ),
+  },
+  {
+    date: 'May 2021 - July 2021',
+    location: 'Open Architecture Solutions Sdn. Bhd.',
     title: 'Technical Analyst (Internship)',
     logo: 'logoOas.png',
     content: (
       <ul className="text-start pl-6 w-11/12 flex flex-col justify-self-center">
-        <li>Cross Platform Mobile Apps. (Ionic, Angular & Typescript)</li>
+        <li>
+          Collaborated with a senior developer on a project that involved integrating a REST API and developing the
+          front-end of a mobile application using Ionic framework, using Postman to test and debug API endpoints.
+        </li>
         <hr></hr>
-        {/* <li>Collaborated with a senior developer on a project that involved integrating a REST API and developing the
-        front-end of a mobile application using Ionic framework v4. To aid in the development process, we utilized the
-        Postman API tool to test and debug our API endpoints.</li> */}
       </ul>
     ),
   },
