@@ -1,7 +1,11 @@
 /* eslint-env node */
+const path = require('path');
 
 // https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
 const nextConfig = {
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'node_modules')],
+  },
   webpack: config => {
     const oneOfRule = config.module.rules.find(rule => rule.oneOf);
 
